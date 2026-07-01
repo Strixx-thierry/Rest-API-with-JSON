@@ -1,6 +1,6 @@
 namespace RestApiJson.Data
 {
-    // The real payload: the "record" object from the API.
+    // the "record" object from the API.
     [System.Serializable]
     public class PlayerData
     {

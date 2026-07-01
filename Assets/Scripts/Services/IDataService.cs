@@ -3,8 +3,7 @@ using RestApiJson.Data;
 
 namespace RestApiJson.Services
 {
-    // Contract for anything that can fetch player data.
-    // The UI depends on this, not on the concrete class.
+    // The UI depends on this.
     public interface IDataService
     {
         // Ask for the data. One callback runs on success, the other on failure.

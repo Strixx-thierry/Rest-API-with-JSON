@@ -6,11 +6,11 @@ using RestApiJson.Services;
 
 namespace RestApiJson.UI
 {
-    // The "brain": asks the service for data, then fills the screen with it.
+    // asks the service for data, then fills the screen with it.
     public class PlayerDataUIController : MonoBehaviour
     {
         [Header("Data source")]
-        [SerializeField] private JsonApiService apiService; // assigned in Inspector
+        [SerializeField] private JsonApiService apiService;
         private IDataService dataService;                   // used through the interface
 
         [Header("Header texts")]
@@ -20,8 +20,8 @@ namespace RestApiJson.UI
         [SerializeField] private TMP_Text positionText;
 
         [Header("Inventory list")]
-        [SerializeField] private Transform inventoryContent;      // the ScrollView Content
-        [SerializeField] private InventoryItemView itemPrefab;    // one row template
+        [SerializeField] private Transform inventoryContent;
+        [SerializeField] private InventoryItemView itemPrefab;   
 
         [Header("Status / controls")]
         [SerializeField] private TMP_Text statusText;
